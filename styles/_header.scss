@@ -1,0 +1,18 @@
+@mixin flex($height) {
+    height: $height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    @include flex(20vh);
+    background:$buttonsColor;
+    button{
+        background:$buttonsColor;
+        &::after{
+            color:red;
+            content: "Testttttttttttttt";
+        }
+    }
+}
